@@ -11,18 +11,21 @@
 }
 
 body{
-    background-image: linear-gradient(rgb(255, 255, 255), rgb(21, 34, 151), rgb(38, 10, 112));
+    background-image: linear-gradient(rgb(255 255 255), rgb(175, 175, 175));
 }
 
 body.dark{
     background-image: linear-gradient(black, rgb(1, 2, 73), rgb(0, 0, 0));
 }
-
+h3{
+    color: black;
+}
 h1{
     color: rgb(214, 213, 201);
     font-family: "Rye", serif;
 }
 .produtos-carrosel{
+    color: black;
     margin: 50px;
     text-align: center;
     font-size: 40px;
@@ -32,10 +35,21 @@ div#navbarNav {
     flex-grow: unset;
 }
 .navbar{
+    top: 0;
     width: 100%;
     z-index: 9;
     position: fixed;
-    background-color: #0d1eb813;
+    background-color: #7575751c;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-around;
+}
+.dark .navbar{
+    top: 0;
+    width: 100%;
+    z-index: 9;
+    position: fixed;
+    background-color: #0d1eb813 ;
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-around;
@@ -158,7 +172,7 @@ footer{
     list-style: none;
 }
 .footer-list .footer-link {
-    color: #a8a29e;
+    color: #6b6b6b;
     transition: all 0.4s;
 }
 .footer-list .footer-link:hover{
@@ -170,7 +184,7 @@ footer{
     gap: 1.5rem;
 }
 #footer_subscribe p{
-    color: #a8a29e;
+    color: #6b6b6b;
 }
 
 #input_group{
@@ -201,10 +215,10 @@ footer{
 #footer_copyright{
     display: flex;
     justify-content: center;
-    background-color:#0e0c0c;
     font-size: 0.9rem;
     padding: 1.5rem;
     font-weight: 100;
+    color: #ffffff;
 }
 #modoEscuro{
     background-color: #000000;
@@ -227,17 +241,15 @@ footer{
     color: #b0b0b0;
 }
 .dark h1, .dark h2,.dark h3,.dark .footer_content{
-    color:  rgb(0, 0, 0);
+    color:  rgb(255, 255, 255);
 }
 .dark header, .dark footer, .dark #footer_content{
-    background-color: #e6e6e6;
     color: #0e0c0c;
 }
 .dark #footer_copyright {
     display: flex;
     justify-content: center;
-    background-color: #e3e3e3;
-    color: #000000 !important;
+    color: #ffffff !important;
     font-size: 0.9rem;
     padding: 1.5rem;
     font-weight: 100;

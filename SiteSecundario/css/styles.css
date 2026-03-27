@@ -6,8 +6,18 @@ body {
   margin: 0;
   padding: 0;
 }
-
 .navbar{
+    top: 0;
+    width: 100%;
+    z-index: 9;
+    position: fixed;
+    background-color: #7575751c;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-around;
+}
+.dark .navbar{
+    top: 0;
     width: 100%;
     z-index: 9;
     position: fixed;
@@ -78,7 +88,7 @@ h2{
 }
 
 .rating {
-  color: #81c784;
+  color: #50bb55;
   font-size: 1.2rem;
   margin-bottom: 20px;
 }
@@ -126,6 +136,49 @@ h2{
 
 .add-to-cart {
   padding: 15px 30px;
+  background-color: rgb(0, 160, 48);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.add-to-cart:hover {
+  background-color: #246827;
+}
+.add-to-wishlist {
+  padding: 15px 30px;
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+.add-to-wishlist:hover {
+  color: #f80404;
+}
+.delivery {
+  margin-top: 20px;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.dark .add-to-wishlist {
+  padding: 15px 30px;
+  background-color: #1e1e1e;
+  color: #b30404;
+  order: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+.dark .add-to-wishlist:hover {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+.dark .add-to-cart {
+  padding: 15px 30px;
   background-color: #1e1e1e;
   color: #fff;
   border: none;
@@ -133,32 +186,9 @@ h2{
   cursor: pointer;
   transition: background 0.3s;
 }
-
-.add-to-cart:hover {
-  background-color: #388e3c;
+.dark .add-to-cart:hover {
+  background-color: #388a3c;
 }
-
-.add-to-wishlist {
-  padding: 15px 30px;
-  background-color: #1e1e1e;
-  color: #b30404;
-  border: 2px solid #ffffff;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s, color 0.3s;
-}
-
-.add-to-wishlist:hover {
-  background-color: #1e1e1e;
-  color: #fff;
-}
-
-.delivery {
-  margin-top: 20px;
-  color: #777;
-  font-size: 0.9rem;
-}
-
 /* Especificações do Produto */
 .product-specs {
   margin-top: 40px;

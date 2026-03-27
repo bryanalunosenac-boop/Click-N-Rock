@@ -11,7 +11,7 @@
 }
 
 body{
-    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255));
+    background-image: linear-gradient(rgb(255 255 255), rgb(175, 175, 175));
 }
 body.dark{
     background-image: linear-gradient(black, rgb(1, 2, 73), rgb(0, 0, 0));
@@ -34,7 +34,18 @@ div#navbarNav {
     width: 100%;
     z-index: 9;
     position: fixed;
-    background-color: #0d1eb813;
+    background-color: #7575751c;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-around;
+}
+
+.dark .navbar{
+    top: 0;
+    width: 100%;
+    z-index: 9;
+    position: fixed;
+    background-color: #0d1eb813 !important;
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-around;
@@ -113,6 +124,7 @@ footer{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 3rem 3.5rem;
+    color: black;
 }
 #footer_contacts h1 {
     margin-bottom: 0.75rem;
@@ -175,7 +187,7 @@ footer{
 #input_group{
     display: flex;
     align-items: center;
-    background-color: #0e0c0c;
+    background-color: #c2c2c2;
     border-radius: 4px;
 }
 #input_group input{
@@ -200,10 +212,10 @@ footer{
 #footer_copyright{
     display: flex;
     justify-content: center;
-    background-color:#0e0c0c;
     font-size: 0.9rem;
     padding: 1.5rem;
     font-weight: 100;
+    color: #000000;
 }
 #modoEscuro{
     background-color: #000000;
@@ -226,17 +238,16 @@ footer{
     color: #e0e0e0;
 }
 .dark h1, .dark h2,.dark h3,.dark .footer_content{
-    color:  rgb(0, 0, 0);
+    color:  rgb(255, 255, 255);
 }
 .dark header, .dark footer, .dark #footer_content{
-    background-color: #e6e6e6;
     color: #0e0c0c;
 }
 .dark #footer_copyright {
     display: flex;
     justify-content: center;
-    background-color: #e3e3e3;
-    color: #0e0c0c !important;
+    background-color: #080808;
+    color: #ffffff !important;
     font-size: 0.9rem;
     padding: 1.5rem;
     font-weight: 100;
@@ -295,6 +306,9 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.product-info h2{
+    color: black;
 }
 .img-card{
     width: 90%;
