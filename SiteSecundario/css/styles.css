@@ -1,7 +1,7 @@
 /* Estilos Globais */
 body {
   font-family: Arial, sans-serif;
-  background-color: #121212;
+  background-image: linear-gradient(black, rgb(1, 2, 73), rgb(0, 0, 0));
   color: #e0e0e0;
   margin: 0;
   padding: 0;
@@ -11,7 +11,7 @@ body {
     width: 100%;
     z-index: 9;
     position: fixed;
-    background-color: #000000 ;
+    background-color: #0d1eb813;
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-around;
